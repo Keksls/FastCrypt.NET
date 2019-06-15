@@ -6,7 +6,10 @@ A lot of Cipher are avaliable from AES to Custom encryption protocols.
 
 ## Getting Started
 
-Just include the .DLL to your project.
+First download the project.
+You can include the project directly in your project.
+On open the solution and build the project 'KeksEncryptor', it will generate a .dll file.
+Just include the .DLL to your project's references.
 
 ### Globale Usage
 
