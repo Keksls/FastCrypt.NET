@@ -1,4 +1,5 @@
-`string path = Environment.CurrentDirectory + @"\test.txt";
+`
+            string path = Environment.CurrentDirectory + @"\test.txt";
             string KeyIVpath = Environment.CurrentDirectory + @"\KeyIV.bin";
             string plainText = "This is a plain test not encrypted.";
             string keyPass = "@Th1s_i5_M7_P45sW0R6!@";
@@ -73,4 +74,5 @@
 
             Encryption.Encrypt("test", EncodingType.UTF8);
 
-            Console.ReadKey();`
+            Console.ReadKey();
+`
