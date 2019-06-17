@@ -1,4 +1,5 @@
 ﻿using KeksEncryptor.Encryptors;
+using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
@@ -153,6 +154,74 @@ namespace KeksEncryptor
                 File.WriteAllBytes(path, Decrypt(File.ReadAllBytes(path)));
             else
                 throw new FileNotFoundException("The file '" + path + "' does not exist.");
+        }
+
+        /// <summary>
+        /// Encrypt a byte[] with the selected Encryptor
+        /// </summary>
+        /// <param name="data">the byte[] you want to Encrypt</param>
+        /// <returns>Encrypted byte[]</returns>
+        public static string EncryptToParsable(string plainText, EncodingType encoding = EncodingType.UTF8)
+        {
+            byte[] data;
+            switch (encoding)
+            {
+                case EncodingType.Default:
+                    data = Encoding.Default.GetBytes(plainText);
+                    break;
+                case EncodingType.ASCII:
+                    data = Encoding.ASCII.GetBytes(plainText);
+                    break;
+                case EncodingType.UTF8:
+                    data = Encoding.UTF8.GetBytes(plainText);
+                    break;
+                case EncodingType.UTF7:
+                    data = Encoding.UTF7.GetBytes(plainText);
+                    break;
+                case EncodingType.UTF32:
+                    data = Encoding.UTF32.GetBytes(plainText);
+                    break;
+                case EncodingType.Unicode:
+                    data = Encoding.Unicode.GetBytes(plainText);
+                    break;
+                case EncodingType.BigEndianUnicode:
+                    data = Encoding.BigEndianUnicode.GetBytes(plainText);
+                    break;
+                default:
+                    data = Encoding.UTF8.GetBytes(plainText);
+                    break;
+            }
+            data = Encrypt(data);
+            return Convert.ToBase64String(data);
+        }
+
+        /// <summary>
+        /// Decrypt a File. (Necesite to call 'SetEncryptor' at least once before).
+        /// </summary>
+        /// <param name="path">the path to the file you want to decrypt.</param>
+        public static string DecryptFromParsable(string plainText, EncodingType encoding = EncodingType.UTF8)
+        {
+            byte[] data = Convert.FromBase64String(plainText);
+
+            switch (encoding)
+            {
+                case EncodingType.Default:
+                    return Encoding.Default.GetString(Decrypt(data));
+                case EncodingType.ASCII:
+                    return Encoding.ASCII.GetString(Decrypt(data));
+                case EncodingType.UTF8:
+                    return Encoding.UTF8.GetString(Decrypt(data));
+                case EncodingType.UTF7:
+                    return Encoding.UTF7.GetString(Decrypt(data));
+                case EncodingType.UTF32:
+                    return Encoding.UTF32.GetString(Decrypt(data));
+                case EncodingType.Unicode:
+                    return Encoding.Unicode.GetString(Decrypt(data));
+                case EncodingType.BigEndianUnicode:
+                    return Encoding.BigEndianUnicode.GetString(Decrypt(data));
+                default:
+                    return Encoding.UTF8.GetString(Decrypt(data));
+            }
         }
 
         /// <summary>

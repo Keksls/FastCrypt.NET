@@ -81,6 +81,13 @@ namespace test
             Encryption.DecryptFile(path);
             Console.WriteLine(File.ReadAllText(path));
 
+            // Parsable
+            Console.WriteLine("\nTo Parsable : ");
+            Encryption.SetEncryptor(EncryptorType.XOR, keyPass);
+            string parsable = "";
+            Console.WriteLine(parsable = Encryption.EncryptToParsable(plainText));
+            Console.WriteLine(Encryption.DecryptFromParsable(parsable));
+            
             Console.ReadKey();
         }
     }
