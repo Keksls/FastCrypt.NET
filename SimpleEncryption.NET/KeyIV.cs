@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KeksEncryptor
+namespace SimpleEncryption.NET
 {
     [Serializable]
     public class KeyIV

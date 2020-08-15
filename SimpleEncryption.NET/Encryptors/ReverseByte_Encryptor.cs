@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KeksEncryptor.Encryptors
+namespace SimpleEncryption.NET.Encryptors
 {
     public class ReverseByte_Encryptor : Encryptor
     {

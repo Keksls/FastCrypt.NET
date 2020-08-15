@@ -1,4 +1,4 @@
-﻿using KeksEncryptor;
+﻿using SimpleEncryption.NET;
 using System;
 using System.IO;
 

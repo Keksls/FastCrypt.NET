@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace KeksEncryptor.Encryptors
+namespace SimpleEncryption.NET.Encryptors
 {
     public class OneToZeroBit_Encryptor : Encryptor
     {

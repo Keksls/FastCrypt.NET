@@ -7,8 +7,8 @@
     <ProjectGuid>{FF9A61D6-C68F-41D6-82E6-30A6D38BD593}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KeksEncryptor</RootNamespace>
-    <AssemblyName>KeksEncryptor</AssemblyName>
+    <RootNamespace>SimpleEncryption.NET</RootNamespace>
+    <AssemblyName>SimpleEncryption.NET</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

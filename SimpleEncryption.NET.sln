@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2050
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeksEncryptor", "KeksEncryptor\KeksEncryptor.csproj", "{FF9A61D6-C68F-41D6-82E6-30A6D38BD593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEncryption.NET", SimpleEncryption.NET\SimpleEncryption.NET.csproj", "{FF9A61D6-C68F-41D6-82E6-30A6D38BD593}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{F215BEF3-24C4-4BF0-A6A7-C5DF4403AF7E}"
 EndProject

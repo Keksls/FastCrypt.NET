@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace KeksEncryptor.Encryptors
+namespace SimpleEncryption.NET.Encryptors
 {
     public class Rijndael_Encryptor : Encryptor
     {

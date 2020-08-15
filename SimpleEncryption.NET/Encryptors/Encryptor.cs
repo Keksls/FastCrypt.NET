@@ -1,4 +1,4 @@
-﻿namespace KeksEncryptor.Encryptors
+﻿namespace SimpleEncryption.NET.Encryptors
 {
     public abstract class Encryptor
     {

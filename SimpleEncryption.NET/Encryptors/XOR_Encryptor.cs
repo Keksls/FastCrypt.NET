@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace KeksEncryptor.Encryptors
+namespace SimpleEncryption.NET.Encryptors
 {
     public class XOR_Encryptor : Encryptor
     {

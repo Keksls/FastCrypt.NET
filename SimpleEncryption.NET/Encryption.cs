@@ -1,10 +1,10 @@
-﻿using KeksEncryptor.Encryptors;
+﻿using SimpleEncryption.NET.Encryptors;
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 
-namespace KeksEncryptor
+namespace SimpleEncryption.NET
 {
     /// <summary>
     /// KeksEncryptor entry point.

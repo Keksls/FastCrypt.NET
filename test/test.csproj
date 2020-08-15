@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KeksEncryptor\KeksEncryptor.csproj">
+    <ProjectReference Include="..\KeksEncryptor\SimpleEncryption.NET.csproj">
       <Project>{FF9A61D6-C68F-41D6-82E6-30A6D38BD593}</Project>
-      <Name>KeksEncryptor</Name>
+      <Name>SimpleEncryption.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
