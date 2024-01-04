@@ -1,6 +1,6 @@
-# KeksEncryption
+# FastEncryption
 
-KeksEncryption is a simple C# solution for File, byte array and text Encryption/Decryption
+FastEncryption is a simple C# solution for File, byte array and text Encryption/Decryption
 A lot of Cipher are avaliable from AES to Custom encryption protocols.
 .NEt Freamwork 3.5, compatible unity 5 and .NET Core
 
@@ -8,14 +8,14 @@ A lot of Cipher are avaliable from AES to Custom encryption protocols.
 
 First download the project.
 You can include the project directly in your project.
-On open the solution and build the project 'KeksEncryptor', it will generate a .dll file.
+On open the solution and build the project 'FastEncryptor', it will generate a .dll file.
 Just include the .DLL to your project's references.
 
 ### Globale Usage
 
 start by adding the following line : 
 ```
-using KeksEncryptor;
+using FastEncryptor;
 ```
 
 The Main entry point for any usage is the static 'Encryption' class.
@@ -59,7 +59,7 @@ You can now Encrypt and Decrypt file, byte array or plaintext
 
 ### interSoftware Key and IV Sharing
 When using AES/Rijndael Ciphers, you usualy can Decrypt only in the software that encrypt.
-KeksEncryption Allow you ro generate  encypted binary (.bin) files that you can use to keep the Key and IV from a software to another.
+FastEncryption Allow you ro generate  encypted binary (.bin) files that you can use to keep the Key and IV from a software to another.
 For exemple, AES/Rijndael encrypt a file in a C# console, and decrypt the same file in a Unity scipt.
 
 Encryption's side :
